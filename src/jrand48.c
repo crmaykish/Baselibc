@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-long jrand48(unsigned short xsubi[3])
+long jrand48(short unsigned *xsubi)
 {
 	uint64_t x;
 
