@@ -14,9 +14,9 @@ else ifeq ($(PLATFORM),cortex-m0)
   CFLAGS += -mcpu=cortex-m0 -mthumb
   CFLAGS += -fno-common -Os
   CFLAGS += -ffunction-sections -fdata-sections
-else ifeq ($(PLATFORM),m68k-elf)
-  CC      = m68k-elf-gcc
-  AR      = m68k-elf-ar
+else ifeq ($(PLATFORM),mackerel)
+  CC      = m68k-mackerel-elf-gcc
+  AR      = m68k-mackerel-elf-ar
   CFLAGS += -mcpu=68000
   CFLAGS += -fno-common -Os
   CFLAGS += -ffunction-sections -fdata-sections
